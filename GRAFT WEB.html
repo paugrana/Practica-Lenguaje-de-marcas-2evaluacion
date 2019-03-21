@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+<head>
+	<meta charset="utf-8"/>
+	<title>Paulo</title>
+
+
+	<style>
+		@font-face{
+			font-family: pauloweb;
+			src: url(fonts/BarlowCondensed-Medium.ttf);        <!--- El tipo de letra que hemos elegido para la pagina --->
+		}
+		div{
+			font-family: pauloweb;
+			margin:0;
+			padding:0;
+			border:0;
+			font-size: 100%;
+		}
+
+		.menuentero{
+			overflow: auto;
+			width: 100%;
+			color: black;
+		}
+		.menuinterno{
+			float: left;
+			width: 40%;
+			overflow: auto;
+			display: inline-block;			
+		}
+		.opciones{
+			padding-top: 10px;
+			padding-bottom: 20px;
+			list-style-type: none;
+			text-align: left;
+			overflow: auto;
+		}
+		.opciones li{
+			font-size: 15px;
+			display: inline-block;
+			padding-left: 15px;
+			width: 20%
+		}
+		.opciones li a{
+			text-decoration: none;
+			color: black;
+		}	
+		.imagendelogo{
+			float: left;
+			width: 20%;
+			display: inline-block;
+			text-align: center;
+			padding-top: 20px;
+			padding-bottom: 15px;
+		}
+		.handmade{
+			background-image: url(imagenes/foto-handmade.webp);
+			background-size: cover;
+			height: 550px;
+		}
+		.imagendehandmade{
+			float: left;
+			margin-left: 32%;
+		}		
+		.imagendehandmade div:hover{
+			outline: 4px solid orange;          
+			outline-offset: -4px;
+		}
+		.letrasindividual{
+			text-align: center;
+			width: 100%;
+			float: left;
+			height: 650px;
+			background-color: white;
+		}
+		.letrasindividual p{
+			margin-top: 0;
+			padding-top: 200px;
+			width: 80%;
+			text-align: center;
+			margin-left: 10%;
+			font-size: 40px;
+		}
+		.letrasindividual p a {
+			text-decoration: underline;
+			color: orange;
+		}
+		.services{
+			width: 100%;
+		}
+		.servicesfondo{
+			background-color: white;
+			background-size: 100%;
+			height: 400px;
+			width: 32%;	
+			float: left;
+			margin-bottom: 10px;
+			transition: background-size 1s;
+		}
+		.servicesfondo:hover{
+			background-size: 130%
+		}
+		.ourmaterials{
+			float: left;
+			width: 100%
+			height: 800px;
+			margin-left: 2%;
+			margin-top: 100px;
+		}
+		.ourmaterialtexto{
+			float:left;
+			width: 30%;
+
+		}
+		.ourmaterialimagen{
+			float: left;
+			width: 70%;
+			padding-top: 100px;
+		}
+		.imagenmaterial{
+			float: right;
+			background-image: url(imagenes/ourmaterials.webp);
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 300px;
+			width: 100%;
+		}
+		.more{
+			text-decoration: none; 
+			color: black;
+			border-bottom: 2px solid orange;
+			transition: color 1s;			
+		}
+		.more:hover{
+			color: orange;
+		}
+		.efectolinea{
+			text-decoration: none; 
+			color: black;
+			transition: color 1s;			
+		}
+		.efectolinea:hover{
+			border-bottom: 3px solid orange;
+		}
+		.efectolinea2{
+			text-decoration: none; 
+			color: black;
+			border-bottom: 3px solid orange;			
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<div class="menuentero">
+		<div class="menuinterno">    
+			<ol class="opciones">
+				<li><a href="#" class="efectolinea2">HOME</a></li>  
+				<li><a href="#" class="efectolinea">SERVICES</a></li>       
+				<li><a href="#" class="efectolinea">MATERIAL</a></li>
+			</ol>
+		</div>
+		<div class="imagendelogo"><img src="imagenes/craft.png"/></div>
+		<div class="menuinterno">
+			<ol class="opciones">
+				<li><a href="#" class="efectolinea">ABOUT US</a></li>
+				<li><a href="#" class="efectolinea">PORTFOLIO</a></li>
+				<li><a href="#" class="efectolinea">CONTACT</a></li>
+				<li><a href="#" class="efectolinea">ZOO</a></li>
+			</ol>
+		</div>
+	</div>
+
+	<div class="handmade"> <!--- la foto de fondo de handmade esta puesta en el style  --->
+		<div style="width: 100%; text-align: center;padding-top:120px;">
+			<p style="font-size: 24px;color:darkgrey;margin-bottom: -40px;">EVERYTHING WE DO IS</p>
+			<p style="font-size: 128px;color:white; margin: auto;">HANDMADE</p>
+			<div class="imagendehandmade">
+				<div style="background-image:url(imagenes/fotohandmade1.webp);background-size: cover;width: 150px;height: 100px;margin-right: 20px;float:left;outline:4px solid white;outline-offset: -5px;"></div>
+				<div style="background-image:url(imagenes/fotohandmade2.webp);background-size: cover;width: 150px;height: 100px;margin-right: 20px;float:left;"></div>
+				<div style="background-image:url(imagenes/fotohandmade3.webp);background-size: cover;width: 150px;height: 100px;margin-right: 20px;float:left;"></div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="letrasindividual">
+		<div style="width: 100%;">
+			<p style="border-top:4px solid orange;height: 10px;padding:0;width: 150px;margin:auto;margin-top: 150px;"></p> <!--- raya naranja que va por debajo de toda la portada de handmade --->
+		</div>
+		<p style="margin-top:-150px;">ARE YOU LOOKING FOR SOMETHING INDIVIDUAL? <br/> WE DESIGN <a href="#">KITCHEN</a>, <a href="#">FURNITURE</a>, <a href="#">INTERIOR</a> AND MUCH MORE.<br/><a href="#">ALL PRODUCTS</a> ARE DESIGNED FOR YOU.</p>
+	</div>
+	
+	
+
+	<div class="services">
+		<div class="servicesfondo" style="margin-right: 10px;"> <h2 style="text-align: center;font-size: 80px;padding-top: 15%;margin-bottom:-10px;">ALL SERVICES</h2><p style="text-align: center;font-size: 16px;"><a href="#" class="more">MORE DETAILS</a></p></div>
+
+		<div class="servicesfondo"style="background-image:url(imagenes/servi1.webp);background-repeat: no-repeat;margin-right: 10px"><div style="height: 70%;background-color: white; width: 80%;margin:auto;margin-top: 35px;"><p style="text-align: center;padding-top: 25%;margin-bottom:-10px;font-size: 50px;">BESPOKE FURNITURE</p><p style="text-align: center;font-size: 16px;"><a href="#" class="more">MORE DETAILS</a></p></div></div> <!--- puesto un fondo blanco encima de la foto con sus respectivas letras y en la clase more con su respectivo hover cuando pases con el raton por las letras y otro hover en el fondo de la foto para cuando pases el raton se agrande asi igual en las otras tres clases de servicesfondo --->
+
+		<div class="servicesfondo"style="background-image:url(imagenes/servi2.webp);background-repeat: no-repeat"><div style="height: 70%;background-color: white; width: 80%;margin:auto;margin-top: 35px;"><p style="text-align: center;padding-top: 25%;margin-bottom:-10px;font-size: 50px;">FLOORS & WALLS</p><p style="text-align: center;font-size: 16px;"><a href="#" class="more">MORE DETAILS</a></p></div></div>
+
+		<div class="servicesfondo" class="servicesfondo"style="background-image:url(imagenes/servi3.webp);background-repeat: no-repeat;margin-right: 10px;"><div style="height: 70%;background-color: white; width: 80%;margin:auto;margin-top: 35px;"><p style="text-align: center;padding-top: 25%;margin-bottom:-10px;font-size: 50px;">KITCHENS</p><p style="text-align: center;font-size: 16px;"><a href="#" class="more">MORE DETAILS</a></p></div></div>
+
+		<div class="servicesfondo"style="background-image:url(imagenes/servi4.webp);background-repeat: no-repeat;margin-right: 10px";><div style="height: 70%;background-color: white; width: 80%;margin:auto;margin-top: 35px;"><p style="text-align: center;padding-top: 25%;margin-bottom:-10px;font-size: 50px;">INTERIOR CONSTRUCTIONS</p><p style="text-align: center;font-size: 16px;"><a href="#" class="more">MORE DETAILS</a></p></div></div>
+
+		<div class="servicesfondo"style="background-image:url(imagenes/servi5.webp);background-repeat: no-repeat"><div style="height: 70%;background-color: white; width: 80%;margin:auto;margin-top: 35px;"><p style="text-align: center;padding-top: 25%;margin-bottom:-10px;font-size: 50px;">PLANNING AND DESIGN</p><p style="text-align: center;font-size: 16px;"><a href="#" class="more">MORE DETAILS</a></p></div></div>
+	</div>
+	
+	
+	<div class="ourmaterials">
+		<div class="ourmaterialtexto">
+			<p style="border-top:4px solid orange;height: 20px;padding:0;width: 100px;margin-top: -20px;margin-bottom: 20px;"></p> <!--- raya naranja que va encima a la izquierda de ourmaterial --->
+			
+			<p style="font-size:60px; margin-top: -20px; ">OUR MATERIALS ALWAYS HAVE THE BEST QUALITY</p>
+			<p  style="font-size: 18px; ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+			<p style="font-size: 22px;"><a href="#" class="more">OUR MATERIALS</a></p>
+		</div>
+		<div class="ourmaterialimagen">
+			<div class="imagenmaterial"></div> <!--- la foto de la derecha de our materials esta puesta en el style --->
+		</div>
+	</div>
+	
+</body>
+</html>
+
+<!---comentarios que destacar en el estilo: hover que e usado en la clase imagen de handmade en este caso se utiliza para cuando seleccionas con la flecha en la foto sale un cuadrado naranja al rededor de la foto como efecto. 
+Hover que utilizo en la clase .more es para cuando hacercas la flecha con el raton a more details la letras se ponen de un color
+naranja.
+Tambien e utilizado otro hover para cuando te vas al menu y pinchas con la flecha en algunas de sus letras saliendo una debajo de
+la letra.
+En la clase de services cabe destaca que e usado un hover poniendo el tamaño de la foto de fondo para cuando hacerques la flecha
+del raton en la foto se agrande hasta el 130% --->
